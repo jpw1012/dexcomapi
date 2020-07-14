@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Init - merge">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/jpw10.xml" afterDir="false" />
+    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Init - code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexcomapi.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/dexcomapi-0.0.1-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/dexcomapi-0.0.1.tar.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594729986861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Init - code">
+      <created>1594730557274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594730557274</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Init - code">
+      <created>1594730804218</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594730804218</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -107,7 +122,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Init - 2" />
     <MESSAGE value="Init - merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init - merge" />
+    <MESSAGE value="Init - code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init - code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1043" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594725640103">
@@ -130,10 +146,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1594729574206" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594729989237">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594730816039">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594729989237" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594730816039" />
     <state x="1089" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594729651253">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
