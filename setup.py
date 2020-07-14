@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dexcomapi", # Replace with your own username
-    version="0.0.1",
+    version="0.1.0",
     author="Jim Walsh",
     author_email="jim@walshfamily.email",
     description="Uses Dexcom APIs to download blood glucose data",
