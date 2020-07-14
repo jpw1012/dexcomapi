@@ -25,12 +25,10 @@ class DexcomSession:
         self._home_url = home_url
         self._init = False
 
-    async def loadSession(self):
+    def loadSession(self):
         # if session is valid, return immediately
         if not self.isExpired():
             return
-        # first try to load tokens from storage
-        self._token_data = await self._store.async_load()
         # _LOGGER.info("Dexcom result from storage")
 
         # if access token is expired or missing, we should refresh
@@ -89,9 +87,9 @@ class DexcomSession:
         data = res.read()
         self._readTokenResponse(data)
 
-    async def load_current_bg(self):
+    def load_current_bg(self):
 
-        await self.loadSession()
+        self.loadSession()
 
         conn = http.client.HTTPSConnection(URLROOT)
         payload = ''
