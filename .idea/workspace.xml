@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Removed storage from api completely">
+    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Updated version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/dexcomapi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexcomapi.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594738272604</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated version">
+      <created>1594738305329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594738305329</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -144,7 +154,8 @@
     <MESSAGE value="Init - code" />
     <MESSAGE value="Moved storage reading out of api. Store is only for updating token now" />
     <MESSAGE value="Removed storage from api completely" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed storage from api completely" />
+    <MESSAGE value="Updated version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1043" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594725640103">
@@ -167,10 +178,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1594731919302" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594738283251">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594738311978">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594738283251" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594738311978" />
     <state x="1089" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594729651253">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

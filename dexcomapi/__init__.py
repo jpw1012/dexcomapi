@@ -26,8 +26,9 @@ class DexcomSession:
         self._token_data = None
         self._home_url = home_url
         self._init = False
+        self.load_session()
 
-    def loadSession(self):
+    def load_session(self):
         # if session is valid, return immediately
         if not self.isExpired():
             return self._token_data
