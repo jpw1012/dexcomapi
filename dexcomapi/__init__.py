@@ -14,22 +14,23 @@ DOMAIN = "dexcom"
 URLROOT = "sandbox-api.dexcom.com"
 
 
+class ExpiredSessionException(Exception):
+    pass
+
 class DexcomSession:
-    def __init__(self, data_store, home_url, client_id: str, client_secret: str, code: str = ""):
+    def __init__(self, home_url, client_id: str, client_secret: str, code: str = ""):
 
         self._client_id = client_id
         self._client_secret = client_secret
         self._refreshOverride = code
         self._token_data = None
-        self._store = data_store
         self._home_url = home_url
         self._init = False
 
     def loadSession(self):
         # if session is valid, return immediately
         if not self.isExpired():
-            return
-        # _LOGGER.info("Dexcom result from storage")
+            return self._token_data
 
         # if access token is expired or missing, we should refresh
         if self.isExpired():
@@ -42,6 +43,7 @@ class DexcomSession:
         # at this point, we should always have a valid token
         assert not self.isExpired()
         self._init = True
+        return self._token_data
 
     def canRefresh(self):
         return self._token_data is not None and "refresh_token" in self._token_data
@@ -63,9 +65,6 @@ class DexcomSession:
         Expires = datetime.now() + timedelta(0, Expires_In)
         token_data["expires_at"] = Expires
         self._token_data = token_data
-        self._store.async_save(token_data)
-
-    # _LOGGER.info("Dexcom saved data: ")
 
     def _refreshFromToken(self):
         # _LOGGER.info("Dexcom refreshing")
@@ -87,9 +86,12 @@ class DexcomSession:
         data = res.read()
         self._readTokenResponse(data)
 
+        return self._token_data
+
     def load_current_bg(self):
 
-        self.loadSession()
+        if self.isExpired():
+            raise ExpiredSessionException()
 
         conn = http.client.HTTPSConnection(URLROOT)
         payload = ''
