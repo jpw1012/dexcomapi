@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Init" />
+    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Init - 2">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +18,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1efu2BwKRJnlhkxWczxVnaJ0zRL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -28,6 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -52,16 +63,41 @@
       <option name="project" value="LOCAL" />
       <updated>1594729019683</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Init">
+      <created>1594729426435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594729426435</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Paths">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="file:$PROJECT_DIR$/.idea/.gitignore" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Init - 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init - 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1043" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594725640103">
@@ -76,14 +112,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1104" y="619" key="Github.CreateGistDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594728696212" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594728943436">
+    <state x="918" y="461" key="MultipleFileMergeDialog" timestamp="1594729948301">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594728943436" />
-    <state x="1081" y="607" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1594728960517">
+    <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594729948301" />
+    <state x="781" y="344" key="SettingsEditor" timestamp="1594729574206">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1081" y="607" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594728960517" />
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1594729574206" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594729748415">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594729748415" />
+    <state x="1089" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594729651253">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1089" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594729651253" />
+    <state x="1060" y="504" key="git4idea.history.wholeTree.VcsStructureChooser" timestamp="1594729572005">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="504" key="git4idea.history.wholeTree.VcsStructureChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1594729572005" />
+    <state x="1062" y="488" key="git4idea.merge.GitMergeDialog" timestamp="1594729964904">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1062" y="488" key="git4idea.merge.GitMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594729964904" />
+    <state x="1004" y="488" key="git4idea.merge.GitPullDialog" timestamp="1594729832790">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1004" y="488" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594729832790" />
+    <state x="1081" y="607" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1594729802350">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1081" y="607" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1594729802350" />
     <state x="1071" y="595" key="git4idea.ui.GitResetDialog" timestamp="1594728991064">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
