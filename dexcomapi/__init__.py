@@ -26,7 +26,6 @@ class DexcomSession:
         self._token_data = None
         self._home_url = home_url
         self._init = False
-        self.load_session()
 
     def load_session(self):
         # if session is valid, return immediately
@@ -99,6 +98,7 @@ class DexcomSession:
         headers = {
             'Authorization': 'Bearer {}'.format(self._token_data['access_token'])
         }
+
         conn.request("GET", "/v2/users/self/egvs?startDate={}&endDate={}".format(
             (datetime.now() - timedelta(0, 0, 0, 0, 10)).strftime(DATEFORMAT), datetime.now().strftime(DATEFORMAT)),
                      payload, headers)
