@@ -18,7 +18,7 @@ class ExpiredSessionException(Exception):
     pass
 
 class DexcomSession:
-    def __init__(self, home_url, client_id: str, client_secret: str, code: str = ""):
+    def __init__(self, user_name, home_url, client_id: str, client_secret: str, code: str = ""):
 
         self._client_id = client_id
         self._client_secret = client_secret
@@ -26,7 +26,11 @@ class DexcomSession:
         self._token_data = None
         self._home_url = home_url
         self._init = False
+        self._user = user_name
         self._expires_at = date(MINYEAR, 1, 1)
+
+    def get_name(self):
+        return self._user
 
     def load_session(self):
         # if session is valid, return immediately
