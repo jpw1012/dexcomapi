@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Correcting date init">
+    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Added profile name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/dexcomapi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594820356377</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added profile name">
+      <created>1594826496917</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1594826496917</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -245,7 +253,8 @@
     <MESSAGE value="Updated version" />
     <MESSAGE value="Moved expired_at to instance variable to ensure token_data can be formatted into json" />
     <MESSAGE value="Correcting date init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcting date init" />
+    <MESSAGE value="Added profile name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added profile name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1043" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594725640103">
