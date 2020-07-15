@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: dexcomapi
-Version: 0.2.0
+Version: 0.2.1
 Summary: Uses Dexcom APIs to download blood glucose data
 Home-page: https://github.com/jpw1012/dexcomapi
 Author: Jim Walsh
