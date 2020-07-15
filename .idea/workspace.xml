@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Updated version">
+    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Moved expired_at to instance variable to ensure token_data can be formatted into json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/dexcomapi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dexcomapi.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi.egg-info/PKG-INFO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594751967847</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Moved expired_at to instance variable to ensure token_data can be formatted into json">
+      <created>1594766766150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1594766766150</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -195,7 +203,8 @@
     <MESSAGE value="Moved storage reading out of api. Store is only for updating token now" />
     <MESSAGE value="Removed storage from api completely" />
     <MESSAGE value="Updated version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated version" />
+    <MESSAGE value="Moved expired_at to instance variable to ensure token_data can be formatted into json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved expired_at to instance variable to ensure token_data can be formatted into json" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1043" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594725640103">
@@ -218,9 +227,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1594731919302" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594751979053">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="3432" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594766785460">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
+    <state x="3432" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1594766785460" />
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594751979053" />
     <state x="1089" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594729651253">
       <screen x="0" y="0" width="2560" height="1400" />

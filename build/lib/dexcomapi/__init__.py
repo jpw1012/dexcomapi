@@ -3,6 +3,7 @@ import logging
 import json
 from json import JSONEncoder
 from datetime import datetime, timedelta
+import datetime
 from collections import defaultdict
 import asyncio
 
@@ -26,6 +27,7 @@ class DexcomSession:
         self._token_data = None
         self._home_url = home_url
         self._init = False
+        self._expires_at = datetime(datetime.MINYEAR, 1, 1)
 
     def load_session(self):
         # if session is valid, return immediately
@@ -49,8 +51,7 @@ class DexcomSession:
         return self._token_data is not None and "refresh_token" in self._token_data
 
     def isExpired(self):
-        return self._token_data is None or "expires_at" not in self._token_data or datetime.now() > self._token_data[
-            "expires_at"]
+        return self._token_data is None or "access_token" not in self._token_data or datetime.now() > self._expires_at
 
     def _readTokenResponse(self, data):
         token_data = json.loads(data)
@@ -61,9 +62,9 @@ class DexcomSession:
         # _LOGGER.info("Dexcom reading tokens")
         # _LOGGER.info(data.decode("utf-8"))
 
-        Expires_In = token_data['expires_in']
-        Expires = datetime.now() + timedelta(0, Expires_In)
-        token_data["expires_at"] = Expires
+        expires_in = token_data['expires_in']
+        expires = datetime.now() + timedelta(0, expires_in)
+        self._expires_at = expires
         self._token_data = token_data
 
     def _refreshFromToken(self):
