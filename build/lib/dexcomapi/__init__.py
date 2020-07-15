@@ -2,8 +2,7 @@
 import logging
 import json
 from json import JSONEncoder
-from datetime import datetime, timedelta
-import datetime
+from datetime import datetime, timedelta, MINYEAR
 from collections import defaultdict
 import asyncio
 
@@ -27,7 +26,7 @@ class DexcomSession:
         self._token_data = None
         self._home_url = home_url
         self._init = False
-        self._expires_at = datetime.date(datetime.MINYEAR, 1, 1)
+        self._expires_at = datetime.date(MINYEAR, 1, 1)
 
     def load_session(self):
         # if session is valid, return immediately
