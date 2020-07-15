@@ -17,6 +17,9 @@ URLROOT = "sandbox-api.dexcom.com"
 class ExpiredSessionException(Exception):
     pass
 
+class NoBGDataException(Exception):
+    pass
+
 class DexcomSession:
     def __init__(self, user_name, home_url, client_id: str, client_secret: str, code: str = ""):
 
@@ -34,29 +37,29 @@ class DexcomSession:
 
     def load_session(self):
         # if session is valid, return immediately
-        if not self.isExpired():
+        if not self.is_expired():
             return self._token_data
 
         # if access token is expired or missing, we should refresh
-        if self.isExpired():
+        if self.is_expired():
             # If our refresh token is not valid (expired or does not exist), we should refresh with the configured token
-            if not self.canRefresh():
+            if not self.can_refresh():
                 self._token_data = {"refresh_token": self._refreshOverride}
             # _LOGGER.info("Dexcom needs refresh")
-            self._refreshFromToken()
+            self._refresh_from_token()
 
         # at this point, we should always have a valid token
-        assert not self.isExpired()
+        assert not self.is_expired()
         self._init = True
         return self._token_data
 
-    def canRefresh(self):
+    def can_refresh(self):
         return self._token_data is not None and "refresh_token" in self._token_data
 
-    def isExpired(self):
+    def is_expired(self):
         return self._token_data is None or "access_token" not in self._token_data or datetime.now() > self._expires_at
 
-    def _readTokenResponse(self, data):
+    def _read_token_response(self, data):
         token_data = json.loads(data)
         if token_data is None or "access_token" not in token_data:
             # _LOGGER.error(data)
@@ -70,7 +73,7 @@ class DexcomSession:
         self._expires_at = expires
         self._token_data = token_data
 
-    def _refreshFromToken(self):
+    def _refresh_from_token(self):
         # _LOGGER.info("Dexcom refreshing")
 
         url = self._home_url
@@ -88,13 +91,13 @@ class DexcomSession:
                      headers)
         res = conn.getresponse()
         data = res.read()
-        self._readTokenResponse(data)
+        self._read_token_response(data)
 
         return self._token_data
 
     def load_current_bg(self):
 
-        if self.isExpired():
+        if self.is_expired():
             raise ExpiredSessionException()
 
         conn = http.client.HTTPSConnection(URLROOT)
@@ -117,5 +120,8 @@ class DexcomSession:
             if last_time is None or last_time < time:
                 last_time = time
                 bg = bgdata
+
+        if bg is None:
+            raise NoBGDataException()
 
         return bg
