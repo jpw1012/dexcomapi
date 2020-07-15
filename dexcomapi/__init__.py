@@ -3,7 +3,6 @@ import logging
 import json
 from json import JSONEncoder
 from datetime import datetime, timedelta
-import datetime
 from collections import defaultdict
 import asyncio
 
