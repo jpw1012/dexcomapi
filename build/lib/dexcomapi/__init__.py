@@ -11,8 +11,9 @@ import mimetypes
 
 DATEFORMAT = "%Y-%m-%dT%H:%M:%S"
 DOMAIN = "dexcom"
-URLROOT = "sandbox-api.dexcom.com"
+URLROOT = "api.dexcom.com"
 
+_LOGGER = logging.getLogger(__name__)
 
 class ExpiredSessionException(Exception):
     pass
@@ -45,7 +46,7 @@ class DexcomSession:
             # If our refresh token is not valid (expired or does not exist), we should refresh with the configured token
             if not self.can_refresh():
                 self._token_data = {"refresh_token": self._refreshOverride}
-            # _LOGGER.info("Dexcom needs refresh")
+            _LOGGER.info("Dexcom needs refresh")
             self._refresh_from_token()
 
         # at this point, we should always have a valid token
@@ -62,10 +63,10 @@ class DexcomSession:
     def _read_token_response(self, data):
         token_data = json.loads(data)
         if token_data is None or "access_token" not in token_data:
-            # _LOGGER.error(data)
+            _LOGGER.error(data)
             assert True == False
 
-        # _LOGGER.info("Dexcom reading tokens")
+        _LOGGER.info("Dexcom reading tokens")
         # _LOGGER.info(data.decode("utf-8"))
 
         expires_in = token_data['expires_in']
@@ -74,7 +75,7 @@ class DexcomSession:
         self._token_data = token_data
 
     def _refresh_from_token(self):
-        # _LOGGER.info("Dexcom refreshing")
+        _LOGGER.info("Dexcom refreshing")
 
         url = self._home_url
         # _LOGGER.info("Requesting Dexcom auth tokens using code")
