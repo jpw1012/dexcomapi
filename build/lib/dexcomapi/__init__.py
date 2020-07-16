@@ -106,9 +106,10 @@ class DexcomSession:
         headers = {
             'Authorization': 'Bearer {}'.format(self._token_data['access_token'])
         }
-
+        # send utc for system time.
+        # TODO ideally, we would pull the correct timeframe from dateRange api first
         conn.request("GET", "/v2/users/self/egvs?startDate={}&endDate={}".format(
-            (datetime.now() - timedelta(0, 0, 0, 0, 10)).strftime(DATEFORMAT), datetime.now().strftime(DATEFORMAT)),
+            (datetime.utcnow() - timedelta(0, 0, 0, 0, 10)).strftime(DATEFORMAT), datetime.utcnow().strftime(DATEFORMAT)),
                      payload, headers)
         res = conn.getresponse()
         data = json.loads(res.read())
