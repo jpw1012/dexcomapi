@@ -109,10 +109,11 @@ class DexcomSession:
         # send utc for system time.
         # TODO ideally, we would pull the correct timeframe from dateRange api first
         conn.request("GET", "/v2/users/self/egvs?startDate={}&endDate={}".format(
-            (datetime.utcnow() - timedelta(0, 0, 0, 0, 10)).strftime(DATEFORMAT), datetime.utcnow().strftime(DATEFORMAT)),
+            (datetime.utcnow() - timedelta(0, 0, 0, 0, 30)).strftime(DATEFORMAT), datetime.utcnow().strftime(DATEFORMAT)),
                      payload, headers)
         res = conn.getresponse()
-        data = json.loads(res.read())
+        data_str = res.read()
+        data = json.loads(data_str)
 
         last_time = None
         bg = None
@@ -124,6 +125,7 @@ class DexcomSession:
                 bg = bgdata
 
         if bg is None:
+            _LOGGER.info(f"No BG data found: {data_str}")
             raise NoBGDataException()
 
         return bg
