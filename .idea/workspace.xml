@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="changed api to use utcnow">
+    <list default="true" id="97dfffa6-3790-4a3d-882a-d97b2a59ee5b" name="Default Changelist" comment="Improved error logging">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dexcomapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dexcomapi/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
@@ -251,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594921392349</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Improved error logging">
+      <created>1594923542677</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1594923542677</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -299,7 +306,8 @@
     <MESSAGE value="Move to prod api" />
     <MESSAGE value="Renamed methods and added missing data exception" />
     <MESSAGE value="changed api to use utcnow" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed api to use utcnow" />
+    <MESSAGE value="Improved error logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved error logging" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1043" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594725640103">
@@ -322,11 +330,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1594731919302" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594921402004">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1594923553508">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="3432" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.2560.1400@2560.0.2560.1400" timestamp="1594771420004" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594921402004" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1594923553508" />
     <state x="1089" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594729651253">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
